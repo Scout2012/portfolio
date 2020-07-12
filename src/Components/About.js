@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
 class About extends Component {
-   constructor(props){
-      super(props)
-      this.downloadEmail = this.downloadEmail.bind(this)
-   }
+   // constructor(props){
+   //    super(props)
+   //    this.downloadEmail = this.downloadEmail.bind(this)
+   // }
 
    // downloadEmail(){
    //    fetch(this.props.data.resumedownload)
