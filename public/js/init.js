@@ -148,10 +148,9 @@
 
       var data = 'contactName=' + contactName + '&contactEmail=' + contactEmail +
                '&contactSubject=' + contactSubject + '&contactMessage=' + contactMessage;
-      console.log(data)
       $.ajax({
 	      type: "POST",
-         url: "http://localhost:5000/sendEmail",
+         url: "https://9uhhe5dr2g.execute-api.us-east-1.amazonaws.com/dev/sendEmail",
          crossDomain: true,
 	      data: data,
 	      success: function(msg) {
