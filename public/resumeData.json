@@ -1,0 +1,95 @@
+{
+  "main": {
+    "name":"Jacob Powell",
+    "occupation":"Software Engineer",
+    "description":"Here will be your description. Use this to describe what you do or whatever you feel best describes yourself to a potential employer",
+    "image":"profilepic.jpg",
+    "bio":"Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
+    "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
+    "email": "jcbpowell12@gmail.com",
+    "phone": "714-757-2277",
+    "address":{
+      "state":"Southern California"
+    },
+    "website": "https://tcginventory.com",
+    "resumedownload":"https://tcginventory.com",
+    "social":[
+      {
+        "name":"github",
+        "url":"https://github.com/scout2012",
+        "className":"fa fa-github"
+      },
+      {
+        "name":"linkedin",
+        "url":"https://www.linkedin.com/in/jacob-powell-925571121/",
+        "className":"fa fa-linkedin"
+      },
+      {
+        "name":"twitter",
+        "url":"https://twitter.com/scoutdude2012",
+        "className":"fa fa-twitter"
+      }
+    ]
+  },
+  "resume":{
+    "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
+    "education":[
+      {
+        "school":"California State University, Fullerton",
+        "degree":"B.S. Computer Science",
+        "graduated":"May 2021",
+        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+      }
+    ],
+    "work":[
+      {
+        "company":"Taco Bell",
+        "title":"Software Engineer Intern",
+        "years":"June 2020 - Present",
+        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+      },
+      {
+        "company":"Quantum Automation",
+        "title":"Software Engineer",
+        "years":"July 2019 - February 2020",
+        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+      }
+    ],
+    "skills":[
+      {
+        "name":"Node.js",
+        "image":"node.png"
+      },
+      {
+        "name":"Git",
+        "image":"git.png"
+      },
+      {
+        "name":"ReactJs",
+        "image":"react.png"
+      },
+      {
+        "name":"Python",
+        "image":"python.png"
+      },
+      {
+        "name":"C++",
+        "image":"c++.png"
+      },
+      {
+        "name":"MySQL",
+        "image":"mysql.png"
+      }
+    ]
+  },
+  "portfolio":{
+    "projects": [
+      {
+        "title":"TCG Inventory",
+        "category":"Virtual Magic: The Gathering inventory manager and price tracker",
+        "image":"tcginventory.png",
+        "url":"https://www.tcginventory.com"
+      }
+    ]
+  }
+}

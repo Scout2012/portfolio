@@ -1,0 +1,34 @@
+{
+    "paths": [
+        {
+            "name": "/sendEmail",
+            "lambdaFunction": "sendemaillambda",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "portfolioapi",
+    "apiName": "portfolioapi",
+    "functionArns": [
+        {
+            "lambdaFunction": "sendemaillambda"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-portfolio-dev-161137-authRole",
+        "unAuthRoleName": "amplify-portfolio-dev-161137-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "sendemaillambda",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
