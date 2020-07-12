@@ -12,7 +12,7 @@
       "state":"Southern California"
     },
     "website": "https://tcginventory.com",
-    "resumedownload":"https://tcginventory.com",
+    "resumedownload":"https://resume.s3.amazonaws.com/Jacob_Powell_Resume.pdf",
     "social":[
       {
         "name":"github",

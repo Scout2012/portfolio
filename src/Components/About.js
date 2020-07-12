@@ -1,6 +1,27 @@
 import React, { Component } from 'react';
 
 class About extends Component {
+   constructor(props){
+      this.downloadEmail = this.downloadEmail.bind(this)
+   }
+
+   downloadEmail(){
+      fetch(this.props.data.resumedownload)
+      .then(resp => resp.blob())
+      .then(blob => {
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.style.display = 'none';
+        a.href = url;
+        // the filename you want
+        a.download = 'Jacob_Powell_Resume.pdf';
+        document.body.appendChild(a);
+        a.click();
+        window.URL.revokeObjectURL(url);
+      })
+      .catch((e) => console.log(e));
+   }
+
   render() {
 
     if(this.props.data){
@@ -29,7 +50,7 @@ class About extends Component {
             <div className="row">
                <div className="columns download">
                   <p>
-                     <a href={resumeDownload} className="button"><i className="fa fa-download"></i>Download Resume</a>
+                     <button id="resumeLink" className="button" onClick={this.downloadEmail}><i className="fa fa-download"></i>Download Resume</button>
                   </p>
                </div>
             </div>
