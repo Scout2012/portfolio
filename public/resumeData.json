@@ -1,11 +1,11 @@
 {
   "main": {
     "name":"Jacob Powell",
-    "occupation":"Software Engineer",
-    "description":"Here will be your description. Use this to describe what you do or whatever you feel best describes yourself to a potential employer",
+    "occupation":"Full Stack Software Engineer",
+    "description":"I create software that no one knows is there until it isn't",
     "image":"profilepic.jpg",
-    "bio":"Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
-    "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
+    "bio":"I'm a very people oriented person. I enjoy talking and working with others in a productive and thoughtful way in order to get things done in a fun and effective manner. I have many hobbies and interests, including playing card games, Soccer, Running, Gardening, and Programming of course!",
+    "contactmessage":"If you wish to get into contact with me, please fill out your information here and I will get back to you as soon as I can!",
     "email": "jcbpowell12@gmail.com",
     "phone": "714-757-2277",
     "address":{
@@ -32,7 +32,7 @@
     ]
   },
   "resume":{
-    "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
+    "skillmessage":"I work with a wide variety of technologies! Here's some of my favorites in no particular order.",
     "education":[
       {
         "school":"California State University, Fullerton",
@@ -46,13 +46,30 @@
         "company":"Taco Bell",
         "title":"Software Engineer Intern",
         "years":"June 2020 - Present",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description":[
+          "Took web application from design to production in 10 weeks by leveraging Serverless technology through AWS and Python",
+          "Met with team in daily standups to discuss work accomplished and work to be done for the day",
+          "Demoed progress weekly to various managers from various teams such as Security and Operations"
+        ]
+      },
+      {
+        "company":"California State University, Fullerton",
+        "title":"Student Research Assistant",
+        "years":"September 2019 - Present",
+        "description": [
+          "Researched methods for aiding in Cancer Prognosis",
+          "Used various methods such as recursive feature elimination to help reduce the amount of dimensions within a dataset",
+          "Tested various machine learning models and measured effectiveness from each model to determine the most effective one to use"
+        ]
       },
       {
         "company":"Quantum Automation",
         "title":"Software Engineer",
         "years":"July 2019 - February 2020",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description":[
+          "Designed and built a software solution to transport over 500,000 points of data from RFID chips daily",
+          "Saved thousands of dollars and dozens of man hours by pivoting the development of a software project into a different direction and executing on it"
+        ]
       }
     ],
     "skills":[

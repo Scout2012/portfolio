@@ -13,7 +13,9 @@ class Resume extends Component {
       var work = this.props.data.work.map(function(work){
         return <div key={work.company}><h3>{work.title}</h3>
             <p className="info">{work.company}<span>&bull;</span> <em className="date">{work.years}</em></p>
-            <p>{work.description}</p>
+            {work.description.map((description)=>{
+              return <li className="jacob-job-description">{description}</li>
+            })}
         </div>
       })
       var skills = this.props.data.skills.map(function(skills){

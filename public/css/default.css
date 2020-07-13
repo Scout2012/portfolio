@@ -827,6 +827,15 @@ properly.
    border-bottom: 1px solid #E8E8E8;
 }
 
+.jacob-centered {
+   display: flex;
+   justify-content: center;
+}
+
+.jacob-job-description {
+   margin-bottom: 1em;
+}
+
 .feature-item {
    text-align: center;
    margin-top: 2.5em;
