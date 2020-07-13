@@ -24,9 +24,10 @@ const mailUser = process.env.MAILUSERNAME || 'null'
 const mailPass = process.env.MAILPASSWORD || 'null'
 const corsOrigin = process.env.CORSORIGIN || 'http://localhost:3000'
 const PORT = 5000
+
 // Enable CORS for all methods
 app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", 'https://www.jacobpowell.dev/')
+  res.header("Access-Control-Allow-Origin", corsOrigin)
   res.header("x-apigateway-event")
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, ")
   next()
