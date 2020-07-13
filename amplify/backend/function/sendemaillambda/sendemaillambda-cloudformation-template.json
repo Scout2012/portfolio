@@ -68,7 +68,7 @@
 				"Timeout": "25",
 				"Code": {
 					"S3Bucket": "amplify-portfolio-dev-161137-deployment",
-					"S3Key": "amplify-builds/sendemaillambda-444f5862426b48394638-build.zip"
+					"S3Key": "amplify-builds/sendemaillambda-6a774451734259423579-build.zip"
 				}
 			}
 		},
