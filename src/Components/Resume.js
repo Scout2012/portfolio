@@ -19,11 +19,11 @@ class Resume extends Component {
             })}
         </div>
       })
-      var skills = this.props.data.skills.map(function(skills){
-        var imageClassName = 'jacob-programming-image';
-        var skillClassName = 'columns feature-item'
-        return <div key={skills.name}className={skillClassName}><img src={"images/" + skills.image}className={imageClassName}></img><em>{skills.name}</em></div>
-      })
+      // var skills = this.props.data.skills.map(function(skills){
+      //   var imageClassName = 'jacob-programming-image';
+      //   var skillClassName = 'columns feature-item'
+      //   return <div key={skills.name}className={skillClassName}><img src={"images/" + skills.image}className={imageClassName}></img><em>{skills.name}</em></div>
+      // })
     }
 
     return (
@@ -68,7 +68,19 @@ class Resume extends Component {
             <p>{skillmessage}
             </p>
 
-          {skills}
+          {/* {skills} */}
+          <div className="skill-wrapper">
+            <div className="skill-icons">
+              <i class="devicon-git-plain-wordmark colored icon"></i>
+              <i class="devicon-nodejs-plain-wordmark colored icon "></i>
+              <i class="devicon-react-original-wordmark colored icon"></i>
+            </div>
+            <div className="skill-icons">
+              <i class="devicon-cplusplus-plain-wordmark colored icon"></i>
+              <i class="devicon-mysql-plain-wordmark colored icon"></i>
+              <i class="devicon-python-plain-wordmark colored icon"></i>
+            </div>
+          </div>
 			  </div>
       </div>
    </section>
