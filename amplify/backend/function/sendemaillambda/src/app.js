@@ -24,10 +24,9 @@ const mailUser = process.env.MAILUSERNAME || 'null'
 const mailPass = process.env.MAILPASSWORD || 'null'
 const corsOrigin = process.env.CORSORIGIN || 'http://localhost:3000'
 const PORT = 5000
-
 // Enable CORS for all methods
 app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", corsOrigin)
+  res.header("Access-Control-Allow-Origin", 'https://www.jacobpowell.dev')
   res.header("x-apigateway-event")
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, ")
   next()
@@ -38,32 +37,31 @@ app.use(function(req, res, next) {
  * Example get method *
  **********************/
 
-// app.post('/sendEmail', function(req, res) {
-//   console.log(req)
-//   let transporter = nodemailer.createTransport({
-//     service: mailService,
-//     auth: {
-//       user: mailUser,
-//       pass: mailPass
-//     }
-//   });
+app.post('/sendEmail', function(req, res) {
+  console.log(req)
+  let transporter = nodemailer.createTransport({
+    service: mailService,
+    auth: {
+      user: mailUser,
+      pass: mailPass
+    }
+  });
   
-//   let mailOptions = {
-//     from: mailUser,
-//     to: mailUser,
-//     subject: 'Sending Email using Node.js',
-//     text: 'That was easy!'
-//   };
+  let mailOptions = {
+    from: mailUser,
+    to: mailUser,
+    subject: 'Sending Email using Node.js',
+    text: 'That was easy!'
+  };
   
-//   transporter.sendMail(mailOptions, function(error, info){
-//     if (error) {
-//       res.send(error);
-//     } else {
-//       res.send('Email sent: ' + info.response);
-//     }
-//   });
-// });
-app.post('/sendEmail', (req, res)=>{ res.send('Testing')})
+  transporter.sendMail(mailOptions, function(error, info){
+    if (error) {
+      res.send(error);
+    } else {
+      res.send(200);
+    }
+  });
+});
 app.listen(PORT, function() {
     console.log("App started")
 });

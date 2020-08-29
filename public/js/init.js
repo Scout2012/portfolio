@@ -146,13 +146,14 @@
       var contactSubject = $('#contactForm #contactSubject').val();
       var contactMessage = $('#contactForm #contactMessage').val();
 
-      var data = 'contactName=' + contactName + '&contactEmail=' + contactEmail +
-               '&contactSubject=' + contactSubject + '&contactMessage=' + contactMessage;
+      var data = {'contactName': contactName, 'contactEmail': contactEmail, 'contactSubject': contactSubject, 'contactMessage': contactMessage}
       $.ajax({
 	      type: "POST",
          url: "https://9uhhe5dr2g.execute-api.us-east-1.amazonaws.com/dev/sendEmail",
          crossDomain: true,
-	      data: data,
+         data: JSON.stringify(data),
+         contentType: 'application/json',
+         dataType: 'json',
 	      success: function(msg) {
 
             // Message was sent
