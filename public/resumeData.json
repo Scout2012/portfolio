@@ -44,6 +44,15 @@
     "work":[
       {
         "company":"Taco Bell",
+        "title":"Software Engineer",
+        "years":"September 2020 - Present",
+        "description":[
+          "Created a Mock API for use in QA for performance testing with Typescript and deployed on AWS",
+          "Built up testing suites and integration tests from the ground up"
+        ]
+      },
+      {
+        "company":"Taco Bell",
         "title":"Software Engineer Intern",
         "years":"June 2020 - Present",
         "description":[
